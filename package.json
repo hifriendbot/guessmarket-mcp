@@ -1,0 +1,51 @@
+{
+  "name": "guessmarket-mcp",
+  "version": "1.2.0",
+  "description": "MCP server for GuessMarket prediction markets — lets AI agents discover markets, analyze prices, view portfolios, build trading transactions, and get contract ABIs across 5 EVM chains",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "guessmarket-mcp": "build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prediction-markets",
+    "blockchain",
+    "ai-agent",
+    "defi",
+    "evm",
+    "pulsechain",
+    "base",
+    "polygon",
+    "ethereum",
+    "bsc",
+    "guessmarket",
+    "on-chain-trading"
+  ],
+  "author": "GuessMarket (https://guessmarket.com)",
+  "license": "MIT",
+  "homepage": "https://guessmarket.com",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "ethers": "^6.16.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
