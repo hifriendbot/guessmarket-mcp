@@ -180,7 +180,7 @@ No API keys required — the server uses the public GuessMarket REST API.
 
 ### Custom API URL
 
-By default the server connects to `https://guessmarket.com/wp-json/guessmarket/v1`. Override with an environment variable:
+By default the server connects to `https://guessmarket.com/api/guessmarket/v1`. Override with an environment variable:
 
 ```json
 {
@@ -189,7 +189,7 @@ By default the server connects to `https://guessmarket.com/wp-json/guessmarket/v
       "command": "npx",
       "args": ["-y", "guessmarket-mcp"],
       "env": {
-        "GUESSMARKET_API_URL": "https://your-instance.com/wp-json/guessmarket/v1"
+        "GUESSMARKET_API_URL": "https://your-instance.com/api/guessmarket/v1"
       }
     }
   }

@@ -5,7 +5,7 @@
 
 const API_BASE =
   process.env.GUESSMARKET_API_URL?.replace(/\/+$/, '') ||
-  'https://guessmarket.com/wp-json/guessmarket/v1';
+  'https://guessmarket.com/api/guessmarket/v1';
 
 export async function api(path: string): Promise<unknown> {
   const url = `${API_BASE}${path}`;
